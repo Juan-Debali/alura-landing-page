@@ -19,7 +19,7 @@
 
 /* Tom café */
 
-/*
+/*git 
 :root {
     --cor-primaria: #1A120B;
     --cor-secundaria:#3C2A21;
@@ -138,7 +138,7 @@ body{
 .apresentacao__links__navegacao{
     width: 70%;
     background-color: #0093E9;
-    background-image: radial-gradient(circle, rgb(225, 185, 128) 18%, rgba(191,123,26,1) 97%);
+    background-image: radial-gradient(circle, var(--cor-octogenaria) 0%, var(--cor-nonagenaria) 97%);
     width: 20rem;
     text-align: center;
     border-radius: 8px;
