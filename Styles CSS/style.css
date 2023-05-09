@@ -9,7 +9,9 @@
     --cor-quinquenaria:white;
     --cor-hexagenaria:#57C5B6;
     --cor-heptagenaria:#88afda;
-
+    --cor-octogenaria:rgba(0,255,235,1);
+    --cor-nonagenaria:rgba(23,179,161,1);
+   
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: Montserrat, sans-serif;
     }
@@ -25,6 +27,8 @@
     --cor-quinquenaria:white;
     --cor-hexagenaria:#D5CEA3;
     --cor-heptagenaria:#cbd5a3;
+    --cor-octogenaria:rgb(225, 185, 128);
+    --cor-nonagenaria:rgba(191,123,26,1);
            
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: Montserrat, sans-serif;
