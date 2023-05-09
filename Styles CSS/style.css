@@ -2,7 +2,7 @@
 
 /* Tom azul */
 
-/*:root {
+:root {
     --cor-primaria: #1A5F7A;
     --cor-secundaria:teal;
     --cor-terciaria:cyan;
@@ -13,10 +13,11 @@
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: Montserrat, sans-serif;
     }
-*/
+
 
 /* Tom café */
 
+/*
 :root {
     --cor-primaria: #1A120B;
     --cor-secundaria:#3C2A21;
@@ -28,7 +29,7 @@
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: Montserrat, sans-serif;
     }
-
+*/
 
 * {
     margin: 0;
@@ -43,32 +44,34 @@ body{
 }
 
 .cabecalho {
-  padding: 2%;
-  height: 10px;
-  background-color: var(--cor-secundaria);
   position: fixed;
   top: 0;
+  height: 4rem;
+  background-color: var(--cor-secundaria);
   width: 100%; 
 }
 
 .cabecalho__menu {
     display: flex;
     justify-content: center; 
-    gap: 80px;
+    gap: 2rem;
     }
 
 .cabecalho__menu__link {
+  position:relative;
+  top: 1rem;
   font-family: var(--fonte-secundaria);
   font-size: 1rem;
-  font-weight: 600px;
+  font-weight: bold;
   text-decoration: none;
   color:var(--cor-hexagenaria);
+  padding: 0;
   }
 
 .cabecalho__menu__link:hover{
-  font-weight:600px;
+  font-weight:bold;
   color: var(--cor-quinquenaria);
-  text-shadow: 0 0 20px rgba(255,255,255,.5), 0 0 15px rgba(255,255,255,.5);
+  text-shadow: 0 0 20px rgba(255,255,255,.5), 0 0 1rem rgba(255,255,255,.5);
   font-family: var(--fonte-secundaria);
   font-size: 1rem;
   text-decoration: none;
@@ -85,16 +88,19 @@ body{
 }
 
 .apresentacao{
-    margin: 8% 15%;
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+    margin: 5% 5%;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2rem;
     }
 
 .apresentacao__conteudo {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction:column;
     gap:20px;
@@ -115,14 +121,13 @@ body{
 .apresentacao__links {
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap:20px;
 }
 
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-primaria);
-    font-weight: 400px;
     font-size: 1rem;
 }
 
@@ -130,33 +135,33 @@ body{
     width: 70%;
     background-color: #0093E9;
     background-image: radial-gradient(circle, rgb(225, 185, 128) 18%, rgba(191,123,26,1) 97%);
-    width: 378px;
+    width: 20rem;
     text-align: center;
     border-radius: 8px;
     font-size:1rem;
-    font-weight:600px;
-    padding: 21.5px 0;
+    font-weight:bold;
+    padding: 1.2rem 0;
     color: black;
     font-family: var(--fonte-secundaria);
     text-decoration: none;
-    box-shadow: 10px 5px 5px var(--cor-secundaria);
+    box-shadow: 0.7rem 0.4rem 0.4rem var(--cor-secundaria);
     border: 2px solid var(--cor-hexagenaria);
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding-left: 10px;
+    gap: 0.7rem;
+    padding-left: 0.7rem;
 }
 
   .apresentacao__links__navegacao:hover{
     background-color: rgb(36, 129, 166);
     background-image: radial-gradient(circle, rgb(225, 185, 128)) 18%, rgba(191,123,26,1) 97%;
-    border: 2px solid var(--cor-terciaria);
-    border-radius: 8px;
-    font-weight:600px;
-    padding: 21.5px 0;
+    border: 0.1rem solid var(--cor-terciaria);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 1.3rem 0;
     color: var(--cor-quinquenaria);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.799), 0 0 10px rgba(255, 255, 255, 0.684);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.799), 0 0 10px rgba(255, 255, 255, 0.684);
     font-family: var(--fonte-secundaria);
     font-size: 1.2rem;
     text-decoration: none;
@@ -184,11 +189,11 @@ footer {
     width: 100%;
     font-family: var(--fonte-primaria);
     font-size: 0.8rem;
-    font-weight:600px;
+    font-weight:bold;
     background-color: var(--cor-secundaria);
     text-align: center;
-    padding: 20px;
-    height: 30px;
+    padding: 1.1rem;
+    height: 1.3rem;
 }
 
 .logos {
@@ -197,8 +202,8 @@ footer {
 
 @media (max-width: 1200px) {
     .cabecalho{
-        padding:10%;
-    }
+       height: 3rem;
+           }
 
     .cabecalho__menu{
         justify-content: center;      
@@ -207,14 +212,15 @@ footer {
     
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 5%;
-        margin: 1% 1%;
-        top: 10rem;
-        gap: 20px;
+        padding: 4%;
+        margin: 2% 2%;
+        top: 5rem;
+        gap: 1.2rem;
     }
 
     .apresentacao__conteudo{
         width:auto;
+        height: auto;
 
     }
 
